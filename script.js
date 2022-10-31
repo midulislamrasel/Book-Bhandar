@@ -92,6 +92,7 @@ const createCard = (book) => {
   div.classList.add("card");
 
   let overview = book.overview;
+  let overViesSubSting = overview.substring(0,50)
 
   div.innerHTML = `
   <div class="image-container">
@@ -107,7 +108,7 @@ const createCard = (book) => {
   <div class="info-container">
     <h1>${book.name}</h1>
     <p>
-      ${overview}
+      ${overViesSubSting}
     </p>
   </div>
 
